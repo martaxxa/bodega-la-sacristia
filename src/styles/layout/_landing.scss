@@ -31,6 +31,7 @@
   &__title {
     font-family: $fontfamily-title;
     font-weight: 600;
+    font-size: 1.5rem;
   }
 
   &__text {
@@ -53,7 +54,6 @@
 
 .tradition {
   background-color: #030302;
-  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -79,5 +79,24 @@
     font-weight: 200;
     color: white;
     margin-top: 2rem;
+    padding-inline: 1rem;
+  }
+
+  &__btn {
+    font-family: $fontfamily-main;
+    font-weight: 300;
+    padding: 5px;
+    border: solid 1px $third-color;
+    background-color: transparent;
+    color: $third-color;
+    border-radius: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__img {
+    width: 17rem;
+    height: 100%;
+    margin-top: 2rem;
+    width: 100%;
   }
 }
