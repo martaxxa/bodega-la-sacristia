@@ -3,20 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Título</title>
-
-    <link rel="stylesheet" href="./scss/main.scss" />
+    <title>Bodega La Sacristía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lavishly+Yours&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.scss" />
     <link rel="icon" href="./images/favicon.png" />
   </head>
 
   <body>
-   
-    <header>
-      <h1>Bodega La Sacristía</h1>
+    <header class="header">
+      <div class="header__box1">
+        <img class="header__logo" src="./images/logo-blanco-sacristia.png"/>
+      </div>
+      <div class="header__box2">
+        <img class="header__menu" src="./images/ico-menu.svg"/>
+      </div>
     </header>
     
     <main>
-      Aquí va tu ejercicio
+      <section class="cover">
+        <div class="principal">
+          <h1 class="principal__title">Bodega La Sacristía</h1>
+          <p class="principal__text">Donde el sabor y la tradición se dan la mano</p>
+          <button class="principal__btn">NUESTRA CARTA</button>
+        </div>
+      </section>
+      <section class="main">
+        <div class="tradition">
+          <h2 class="tradition__title">Tradición</h2>
+          <h3 class="tradition__title2"> y cocina</h3>
+          <p class="tradition__text">Bodega fundada en los años 50 especializada en la elaboración de mosto casero. Situada en la localidad aljarafeña de Almensilla, la cocina española te sorprenderá con una gran oferta gastronómica.</p>
+        </div>
+      </section>
     </main>
 
   </body>

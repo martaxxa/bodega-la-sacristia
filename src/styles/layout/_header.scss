@@ -1,0 +1,17 @@
+.header {
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+
+    &__logo {
+        width: 5rem;
+    }
+
+    &__menu {
+        width: 2.5rem;
+        padding: 0.5rem;
+    }
+
+}
