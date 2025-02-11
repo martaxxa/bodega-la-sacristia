@@ -52,13 +52,14 @@
   }
 }
 
-.tradition {
+.tradition, .plates, .history {
   background-color: #030302;
   display: flex;
   justify-content: center;
   align-items:center;
   flex-direction: column;
   text-align: center;
+  padding-top: 3rem;
 
   &__title {
     font-family: $fontfamily-title;
