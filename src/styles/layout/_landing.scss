@@ -3,7 +3,8 @@
   background-size: cover;
   background-position: 65%;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
@@ -22,28 +23,40 @@
 }
 
 .principal {
+  position: relative;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 20rem;
 
   &__title {
+    font-family: $fontfamily-subtitle;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: $third-color;
+  }
+
+  &__title2{
     font-family: $fontfamily-title;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    margin-top: -0.5rem;
+    line-height: 1;
   }
 
   &__text {
     font-family: $fontfamily-main;
     font-weight: 200;
     font-size: 1rem;
+    margin-top: 0.8rem;
   }
 
   &__btn {
     font-family: $fontfamily-main;
     font-weight: 300;
-    padding: 5px;
+    font-size: 0.9rem;
+    padding: 0.5rem;
     border: solid 1px $third-color;
     background-color: transparent;
     color: $third-color;
@@ -59,19 +72,20 @@
   align-items:center;
   flex-direction: column;
   text-align: center;
-  padding-top: 3rem;
+  padding: 3rem 2rem;
+  min-height: 100vh;
 
   &__title {
     font-family: $fontfamily-title;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
   }
   
   &__title2 {
     font-family: $fontfamily-subtitle;
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: $third-color;
-    margin-top: -1rem;
+    margin-top: -1.4rem;
     line-height: 1;
   }
 
@@ -95,7 +109,6 @@
   }
 
   &__img {
-    width: 17rem;
     height: 100%;
     margin-top: 2rem;
     width: 100%;
