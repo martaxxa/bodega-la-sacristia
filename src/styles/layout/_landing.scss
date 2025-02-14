@@ -65,8 +65,8 @@
   }
 }
 
-.tradition, .plates, .history {
-  background-color: #030302;
+.tradition, .plates, .history, .events {
+  background-color: $background-black;
   display: flex;
   justify-content: center;
   align-items:center;
