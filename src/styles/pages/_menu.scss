@@ -1,7 +1,7 @@
-.head1 {
+.head2 {
   width: 100%;
   height: 30vh;
-  background-image: url("../images/our-history/head1.png"),
+  background-image: url("../images/menu/head2.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
   background-size: cover;
   background-position: 50%;
@@ -11,12 +11,16 @@
   align-items: center;
 }
 
-.content01, .content02, .content03, .content04 {
+.menu2 {
   background-color: $background-black;
   margin: auto;
   padding: 2rem;
   font-size: 1rem;
   line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   &__title {
     font-family: $fontfamily-subtitle;
@@ -26,24 +30,26 @@
   }
 
   &__title2 {
-    font-family: $fontfamily-title;
+    font-family: $fontfamily-subtitle;
     font-weight: 600;
     font-size: 2.5rem;
-    margin-top: -0.5rem;
-    line-height: 1;
-    color: white;
+    color: $third-color;
+    margin-top: -1.3rem;
   }
 
-  &__text {
+  &__btn {
     font-family: $fontfamily-main;
-    font-weight: 200;
-    color: white;
-    margin-block: 1rem;
+    font-weight: 300;
+    padding: 5px;
+    border: solid 1px $third-color;
+    background-color: transparent;
+    color: $third-color;
+    border-radius: 1rem;
+    margin-top: 1rem;
   }
 
-  &__img {
-    height: 100%;
-    margin-top: 2rem;
-    width: 100%;
+  &__link {
+    text-decoration: none;
+    color: $third-color;
   }
 }
