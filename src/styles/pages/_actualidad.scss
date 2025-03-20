@@ -1,0 +1,31 @@
+.head4 {
+    width: 100%;
+    height: 30vh;
+    background-image: url("../images/actualidad/head4.png"),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location {
+  background-color: $background-black;
+  margin: auto;
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  &__text {
+    font-family: $fontfamily-main;
+    font-weight: 200;
+    color: white;
+    margin-block: 1rem;
+  }
+}
