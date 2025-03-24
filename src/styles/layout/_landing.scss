@@ -35,6 +35,11 @@
     font-weight: 600;
     font-size: 2.5rem;
     color: $third-color;
+
+    @media (min-width: 768px) {
+      padding-top: 8rem;
+      font-size: 3.5rem;
+    }
   }
 
   &__title2{
@@ -43,6 +48,10 @@
     font-size: 2.5rem;
     margin-top: -0.5rem;
     line-height: 1;
+
+    @media (min-width: 768px) {
+      font-size: 3.5rem;
+    }
   }
 
   &__text {
@@ -50,6 +59,11 @@
     font-weight: 200;
     font-size: 1rem;
     margin-top: 0.8rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
   }
 
   &__btn {
@@ -69,6 +83,10 @@
       transform: scale(1.05);
       box-shadow: 0 0.5px 20px #565656;
     }
+
+    @media (min-width: 768px) {
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -79,21 +97,30 @@
   align-items:center;
   flex-direction: column;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 0rem 2rem 3rem 2rem;
   min-height: 100vh;
 
   &__title {
     font-family: $fontfamily-title;
     font-size: 2.5rem;
     color: white;
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
   }
   
   &__title2 {
     font-family: $fontfamily-subtitle;
-    font-size: 2.8rem;
+    font-size: 3.3rem;
     color: $third-color;
     margin-top: -1.4rem;
     line-height: 1;
+
+    @media (min-width: 768px) {
+      font-size: 3.8rem;
+      margin-top: -2rem;
+    }
   }
 
   &__text {
@@ -102,17 +129,24 @@
     color: white;
     margin-top: 2rem;
     padding-inline: 1rem;
+    font-size: 1.1rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
   }
 
   &__btn {
     font-family: $fontfamily-main;
     font-weight: 300;
-    padding: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
     border: solid 1px $third-color;
     background-color: transparent;
     color: $third-color;
-    border-radius: 1rem;
-    margin-top: 1rem;
+    border-radius: 1.5rem;
+    margin-top: 1.5rem;
 
     &:hover {
       background-color: $third-color;
@@ -120,11 +154,22 @@
       transform: scale(1.05);
       box-shadow: 0 0.5px 20px #565656;
     }
+
+    @media (min-width: 768px) {
+      font-size: 1.3rem;
+      padding: 1rem;
+      border-radius: 2rem;
+      margin-top: 2rem;
+    }
   }
 
   &__img {
     height: 100%;
     margin-top: 2rem;
     width: 100%;
+
+    @media (min-width: 768px) {
+      width: 80%;
+    }
   }
 }

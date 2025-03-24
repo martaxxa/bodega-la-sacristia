@@ -17,6 +17,10 @@
 
   &__logo {
     width: 5rem;
+
+    @media (min-width: 768px) {
+      width: 7rem;
+    }
   }
 }
 
@@ -37,6 +41,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 768px) {
+      width: 2rem;
+    }
   }
 
   &__icon { 
@@ -52,7 +60,7 @@
   gap: 1rem;
   text-align: left;
   top: 0;
-  right: -100%; // Oculto inicialmente
+  right: -100%;
   width: 300px;
   height: 100vh;
   background: black;
@@ -65,7 +73,7 @@
   transition: right 0.3s ease-in-out;
 
   &.menu--active {
-    right: 0; // Se muestra al activarse
+    right: 0;
   }
 
   li {

@@ -1,5 +1,6 @@
 'use strict';
 
+// LANDING
 document.addEventListener("DOMContentLoaded", () => {
 
     //Query
@@ -39,3 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// NOSOTROS
+
+//Query
