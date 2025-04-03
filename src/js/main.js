@@ -41,6 +41,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// NOSOTROS
+// MENU
 
 //Query
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderBox = document.querySelector(".slider-box");
+  const slides = document.querySelectorAll(".slider-box li");
+  const totalSlides = slides.length;
+  let index = 0;
+
+  const firstClone = slides[0].cloneNode(true);
+  sliderBox.appendChild(firstClone);
+
+  function moveSlider() {
+    index++;
+
+    sliderBox.style.transition = "transform 0.5s ease-in-out";
+    sliderBox.style.transform = `translateX(-${index * 100}%)`;
+
+    if (index === totalSlides) {
+      setTimeout(() => {
+        sliderBox.style.transition = "none";
+        sliderBox.style.transform = "translateX(0)";
+        index = 0;
+      }, 700);
+    }
+  }
+
+  setInterval(moveSlider, 3000); // Cambia cada 3 segundos
+});
