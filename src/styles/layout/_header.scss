@@ -11,9 +11,8 @@
   z-index: 100;
 
   &.header--scrolled {
-    background-color: $background-black 
+    background-color: $background-black;
   }
-
 
   &__logo {
     width: 5rem;
@@ -37,7 +36,7 @@
 
   &__hamburger-menu {
     cursor: pointer;
-    width: 1.7rem; 
+    width: 1.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,9 +46,14 @@
     }
   }
 
-  &__icon { 
+  &__icon {
     width: 100%;
     height: auto;
+  }
+
+  &:hover {
+    background-color: $third-color;
+    color: $background-black;
   }
 }
 
@@ -89,5 +93,19 @@
     &:hover {
       color: #f4a261;
     }
+  }
+
+  &__close-btn {
+    background: none;
+    border: solid 1px $third-color;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: $third-color;
+    font-size: 1rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 10;
   }
 }

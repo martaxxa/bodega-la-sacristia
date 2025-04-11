@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".js_hamburgerMenu");
   const menu = document.querySelector(".js_menu");
   const header = document.querySelector(".js_header");
+  const closeBtn = document.querySelector(".js_menuClose");
 
   //Menú desplegable
   if (menuToggle && menu) {
@@ -22,12 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
       event.stopPropagation();
     });
 
-    menu.addEventListener("mouseleave", () => {
-      menu.classList.remove("menu--active");
-    });
-  } else {
-    console.error("Uno o más elementos no se encontraron en el DOM");
-  }
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () =>{
+        menu.classList.remove("menu--active");
+      });
+  }}
 
   //Fondo del header al hacer scroll
   const scrollThreshold = 50;
@@ -39,34 +39,31 @@ document.addEventListener("DOMContentLoaded", () => {
       header.classList.remove('header--scrolled');
     }
   });
-});
 
-// MENU
-
-//Query
-document.addEventListener("DOMContentLoaded", function () {
+  // MENU - Slider
   const sliderBox = document.querySelector(".slider-box");
   const slides = document.querySelectorAll(".slider-box li");
-  const totalSlides = slides.length;
-  let index = 0;
 
-  const firstClone = slides[0].cloneNode(true);
-  sliderBox.appendChild(firstClone);
+  if (sliderBox && slides.length > 0){
+    const totalSlides = slides.length;
+    let index = 0;
 
-  function moveSlider() {
-    index++;
+    const firstClone = slides[0].cloneNode(true);
+    sliderBox.appendChild(firstClone);
 
-    sliderBox.style.transition = "transform 0.5s ease-in-out";
-    sliderBox.style.transform = `translateX(-${index * 100}%)`;
+    function moveSlider() {
+      index++;
 
-    if (index === totalSlides) {
-      setTimeout(() => {
-        sliderBox.style.transition = "none";
-        sliderBox.style.transform = "translateX(0)";
-        index = 0;
-      }, 700);
+      sliderBox.style.transition = "transform 0.5s ease-in-out";
+      sliderBox.style.transform = `translateX(-${index * 100}%)`;
+
+      if (index === totalSlides) {
+        setTimeout(() => {
+          sliderBox.style.transition = "none";
+          sliderBox.style.transform = "translateX(0)";
+          index = 0;
+        }, 700);
+      }
     }
-  }
-
-  setInterval(moveSlider, 3000); // Cambia cada 3 segundos
-});
+    setInterval(moveSlider, 3000); // Cambia cada 3 segundos
+  }});
