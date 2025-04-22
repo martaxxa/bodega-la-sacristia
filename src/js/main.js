@@ -1,5 +1,10 @@
 'use strict';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 // LANDING
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -67,3 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     setInterval(moveSlider, 3000); // Cambia cada 3 segundos
   }});
+
+  // Fade LANDING
+  AOS.init({
+    duration: 1000, // duración de la animación en milisegundos
+    once: true,     // la animación solo se ejecuta una vez
+    easing: 'ease-in-out',
+  });
