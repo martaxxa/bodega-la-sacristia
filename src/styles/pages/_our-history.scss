@@ -1,17 +1,87 @@
 .head1 {
+  position: relative;
   width: 100%;
-  height: 30vh;
-  background-image: url("../images/our-history/head1.png"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+  min-height: 40svh;
+  background-image: url("../images/our-history/head1.png");
   background-size: cover;
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    min-height: 40svh;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 45svh;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, #000000 100%);
+    z-index: 1;
+  }
+
+  &__principal2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+      margin-top: 0.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 0;
+    }
+  }
 }
 
-.content01, .content02, .content03, .content04 {
+.principal2 {
+  &__title {
+    font-family: $fontfamily-subtitle;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: $third-color;
+
+    @media (min-width: 768px) {
+      margin-top: 1rem;
+      font-size: 3.2rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__title2 {
+    font-family: $fontfamily-title;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: -0.5rem;
+    line-height: 1;
+    color: white;
+
+    @media (min-width: 768px) {
+      font-size: 3.3rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 3.8rem;
+    }
+  }
+}
+
+.content01,
+.content02,
+.content03,
+.content04 {
   background-color: $background-black;
   margin: auto;
   padding: 2rem;

@@ -16,23 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Menú desplegable
   if (menuToggle && menu) {
-    menuToggle.addEventListener("mouseenter", (event) => {
-      menu.classList.add("menu--active");
+    menuToggle.addEventListener("click", () => {
+      menu.classList.toggle("menu--active");
     });
-
-    menu.addEventListener("mouseleave", (event) => {
-      menu.classList.remove("menu--active");
-    });
-
-    menu.addEventListener("mouseenter", (event) => {
-      event.stopPropagation();
-    });
-
+  
     if (closeBtn) {
-      closeBtn.addEventListener("click", () =>{
+      closeBtn.addEventListener("click", () => {
         menu.classList.remove("menu--active");
       });
-  }}
+    }
+  }
 
   //Fondo del header al hacer scroll
   const scrollThreshold = 50;
@@ -72,10 +65,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     setInterval(moveSlider, 3000); // Cambia cada 3 segundos
   }});
-
-  // Fade LANDING
-  AOS.init({
-    duration: 1000, // duración de la animación en milisegundos
-    once: true,     // la animación solo se ejecuta una vez
-    easing: 'ease-in-out',
-  });
