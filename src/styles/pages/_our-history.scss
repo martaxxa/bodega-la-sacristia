@@ -11,6 +11,7 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 2rem;
 
   @media (min-width: 768px) {
     min-height: 40svh;
@@ -83,16 +84,54 @@
 .content03,
 .content04 {
   background-color: $background-black;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
   padding: 2rem;
   font-size: 1rem;
   line-height: 1.6;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    padding-inline: 0;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &:nth-child(even) {
+    @media (min-width: 1200px) {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+  }
+
+  &__title, &__title2, &__text {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
 
   &__title {
     font-family: $fontfamily-subtitle;
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: $third-color;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      width: 90%;
+    }
   }
 
   &__title2 {
@@ -101,19 +140,52 @@
     font-size: 2.3rem;
     margin-top: -0.5rem;
     line-height: 1;
-    color: white;
+    color: white; 
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 2.8rem;
+      margin-bottom: 1.8rem;
+    }
   }
 
   &__text {
     font-family: $fontfamily-main;
     font-weight: 200;
     color: white;
-    margin-block: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    @media (min-width: 768px) {
+      font-size: 1.1rem;
+      margin-block: 1.5rem;
+      padding-inline: 0;
+      width: 70%;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      margin-top: 1.2rem;
+      padding-inline: 0;
+      width: 80%;
+    }
   }
 
   &__img {
-    height: 100%;
+    height: auto;
     margin-top: 2rem;
     width: 100%;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1200px) {
+      width: 35%;
+    }
   }
 }
