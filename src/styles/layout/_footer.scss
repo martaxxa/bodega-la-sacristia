@@ -5,7 +5,7 @@
 
   @media (min-width: 768px) {
     padding-inline: 3rem;
-    padding-block: 2rem;
+    padding-top: 4rem;
   }
 }
 
@@ -32,7 +32,7 @@
   }
 
   &__logo {
-    width: 8rem;
+    width: 7rem;
   }
 
   &__contact {
@@ -49,7 +49,8 @@
     margin-bottom: 0.5rem;
 
     @media (min-width: 768px) {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
+      margin-top: 2rem;
     }
   }
 
@@ -58,7 +59,7 @@
     margin-bottom: 0.2rem;
 
     @media (min-width: 768px) {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 
@@ -93,7 +94,7 @@
     }
 
     @media (min-width: 768px) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }}
 
   @media (min-width: 768px) {
@@ -116,7 +117,7 @@
     font-size: 0.8rem;
 
     @media (min-width: 768px) {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }}
 
   &__logo {
@@ -128,7 +129,7 @@
     width: 6rem;
 
     @media (min-width: 768px) {
-      width: 7rem;
+      width: 5.5rem;
     }
   }
 
@@ -141,7 +142,8 @@
     font-weight: 300;
 
     @media (min-width: 768px) {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
+      text-align: right;
     }
   }
 }
