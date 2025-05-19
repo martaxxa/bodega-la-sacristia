@@ -1,52 +1,160 @@
 .head3 {
+  position: relative;
   width: 100%;
-  height: 30vh;
-  background-image: url("../images/location/header3.png"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+  min-height: 40svh;
+  background-image: url("../images/location/header3.png");
   background-size: cover;
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
+    min-height: 40svh;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 45svh;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, #000000 100%);
+    z-index: 1;
+  }
+
+  &__principal2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+      margin-top: 0.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-top: 0;
+    }
+  }
 }
 
 .location {
   background-color: $background-black;
-  margin: auto;
-  padding: 2rem;
-  font-size: 1rem;
-  line-height: 1.6;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 3rem;
 
-  &__text {
-    font-family: $fontfamily-main;
-    font-weight: 200;
-    color: white;
-    margin-block: 1rem;
+  @media (min-width: 768px) {
+    padding-inline: 0;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row !important;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &:nth-child(even) {
+    @media (min-width: 1200px) {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
   }
 
   &__title {
     font-family: $fontfamily-subtitle;
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: $third-color;
+    margin-top: -1rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      width: 90%;
+    }
   }
 
   &__title2 {
     font-family: $fontfamily-title;
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 2.3rem;
+    margin-top: -0.5rem;
+    line-height: 1;
     color: white;
-    margin-top: -1.3rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 2.8rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &__text {
+    font-family: $fontfamily-main;
+    font-weight: 200;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.1rem;
+      margin-block: 1.5rem;
+      padding-inline: 0;
+      width: 70%;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      margin-top: 1.2rem;
+      padding-inline: 0;
+      width: 80%;
+    }
   }
 
   &__img {
-    height: 100%;
+    height: auto;
     margin-top: 2rem;
     width: 100%;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1200px) {
+      width: 35%;
+    }
+  }
+}
+
+.text-wrapper-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    width: 50%;
   }
 }
