@@ -142,3 +142,40 @@
     }
   }
 }
+
+.contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: $third-color;
+  margin-inline: 6%;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+
+  &__title {
+    font-family: $fontfamily-main;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-family: $fontfamily-main;
+
+    i {
+      margin-right: 10px;
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+  }
+}
