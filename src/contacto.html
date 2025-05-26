@@ -16,10 +16,58 @@
 
     <!--Página Reservas-->
     <body>
-      <main class="head5"></main>
-      <section class="location">
-        <p class="location__text">La Bodega La Sacristía es un pequeño restaurante de gran tradición culinaria localizado estratégicamente en Almensilla, uno de los pequeños pueblos señalados de la Ruta del Mosto, en la comarca del Aljarafe (Sevilla).</p>
+      <main class="head5">
+        <div class="head5__overlay"></div>
+        <div class="head5__principal2">
+          <h1 class="principal2__title">Nuestro</h1>
+          <h1 class="principal2__title2">Contacto</h1>
+        </div>
+      </main>
+      <section class="contacto">
+        <p class="contacto__text"><strong>¿Tienes algo que celebrar, una reunión pendiente 
+          o simplemente ganas de disfrutar de un buen rato en un lugar con alma?</strong></p>
+          <p class="contacto__text">En Bodega La Sacristía te esperamos con las puertas abiertas para 
+          ofrecerte una experiencia auténtica, cuidada y llena de sabor. 
+          Escríbenos, llámanos o ven a visitarnos: estaremos encantados de ayudarte 
+          a organizar tu próxima visita o reservar tu evento especial.</p> 
+      </section>
+      <section class="reservas" data-aos="fade-left">
+        <h2 class="reservas__title">Reserva tu mesa</h2>
+        <p class="reservas__text">Escoge fecha, hora y número de personas:</p>
+        <div id="hors-hydra-d4969660-babf-11ea-a07c-c1a0740d8285"></div>
+          <script>
+            var _hors = [
+              ['eid','hydra-d4969660-babf-11ea-a07c-c1a0740d8285'],
+              ['tagid','hors-hydra-d4969660-babf-11ea-a07c-c1a0740d8285'],
+              ['width','450px'],
+              ['height','450px'],
+              ['foregroundColor','#000000'],  // color del texto
+              ['backgroundColor','#f7ae40'], // fondo del widget
+              ['linkColor','#5e2129'],       // enlaces
+              ['errorColor','#5e2129'],      // mensajes de error
+              ['primaryButtonForegroundColor','#000000'],    // texto del botón principal
+              ['primaryButtonBackgroundColor','white'],    // fondo del botón principal
+              ['secondaryButtonForegroundColor','#000000'],  // texto del botón secundario
+              ['secondaryButtonBackgroundColor','#3d2413']   // fondo del botón secundario
+            ];
+            (function(d, t) {
+              var e = d.createElement(t), s = d.getElementsByTagName(t)[0];
+              e.src = "https://reservation.dish.co/widget.js";
+              s.parentNode.insertBefore(e, s);
+            }(document, 'script'));
+          </script>
+      </section>
+      <section class="mapa" data-aos="fade-right">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6346.800201172661!2d-6.1105187999999995!3d37.3093493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd120d801f6aa2ff%3A0x819e24a0b2d7715!2sBodega%20La%20Sacrist%C3%ADa!5e0!3m2!1ses!2ses!4v1747927795668!5m2!1ses!2ses" 
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </section>
     </body>
+
     <load src="./partials/layout/footer.html" />
 </html>
