@@ -43,9 +43,8 @@
 
 ---
 
-## 🖼️ Captura
+## 📬 Contacto
 
-*(Puedes añadir una imagen aquí cuando lo tengas subido)*
+📧 martach.marketing@gmail.com
 
-```bash
-📷 ./images/screenshot-home.jpg
+📱 622 351 892
