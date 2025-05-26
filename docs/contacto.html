@@ -8,11 +8,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lavishly+Yours&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dad595353d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/main.scss" />
+    
     <link rel="icon" href="./images/favicon.png" />
+      <script type="module" crossorigin src="./assets/main-6147aed9.js"></script>
+      <script type="module" crossorigin src="./js/main.js"></script>
+      <link rel="stylesheet" href="./assets/main-8003569d.css">
+      <link rel="stylesheet" href="./assets/main-73168167.css">
     </head>
 
-  <load src="./partials/layout/header.html" />
+  <header class="header js_header">
+  <div class="header__box1">
+    <a href="index.html"><img class="header__logo" src="./assets/logo-blanco-sacristia-93d28960.png" alt="Logo Sacristia"/></a>
+  </div>
+  <nav class="navbar">
+    <div class="navbar__menu-container">
+      <div class="navbar__hamburger-menu js_hamburgerMenu"> 
+        <img class="navbar__icon" src="./assets/ico-menu-4dccbf9b.svg" alt="Menú"/>
+      </div>
+      <ul class="menu js_menu">
+        <li class="js_menuClose">
+          <button class="menu__close-btn">✕</button>
+        </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div> 
+  </nav>
+
+  
+</header>
 
     <!--Página Reservas-->
     <body>
@@ -69,5 +97,43 @@
       </section>
     </body>
 
-    <load src="./partials/layout/footer.html" />
+    <footer class="footer">
+    <div class="bloques">
+      <div class="bloques__left">
+        <img class="bloques__logo" src="./assets/logo-blanco-sacristia-93d28960.png" alt="Logo Sacristía"/>
+        <ul class="bloques__contact">
+          <li class="bloques__title">Contacto</li>
+          <li class="bloques__list"><i class="fa-solid fa-location-dot" style="margin-right:10px;"></i>C/ Calvario, 16 - 41111 (Almensilla)</li>
+          <li class="bloques__list"><i class="fa-solid fa-phone" style="margin-right:10px;"></i>Reservas: 605 292 729</li>
+          <li class="bloques__list"><i class="fa-solid fa-phone" style="margin-right:10px;"></i>Pedidos: 640 884 522</li>
+          <li class="bloques__list"><i class="fa-solid fa-at" style="margin-right:10px;"></i>bodegalasacristia@gmail.com</li>
+        </ul>
+      </div>
+      <div class="bloques__right">
+        <ul class="media">
+          <li class="media__item">
+            <a href="https://www.facebook.com/LaSacristiaAlmensilla" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="media__item">
+            <a href="https://www.instagram.com/bodegalasacristia/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="cookies">
+          <div class="cookies__links">
+            <li class="cookies__list">Política de privacidad</li>
+            <li class="cookies__list">Política de Cookies</li>
+            <li class="cookies__list">Aviso legal</li>
+            <li class="cookies__logo">
+              <img src="./assets/marta-ch-logo-blanco-0f487959.png" alt="Logo MCH" />
+            </li>
+            <li class="cookies__copyright">BODEGA LA SACRISTIA 2025® | Diseño M.CH Marketing</li>
+          </div>
+        </ul>
+      </div>
+  </div>
+  </footer>
 </html>
