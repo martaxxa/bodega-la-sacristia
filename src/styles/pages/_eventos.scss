@@ -180,26 +180,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  background-color: $third-color;
-  margin-inline: 6%;
-  border-radius: 15px;
-  margin-bottom: 2rem;
+  background-image: url("../images/contacto/madera.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-block: 10%;
+  margin-block: 2rem;
 
   @media (min-width: 768px) {
-    margin-inline: 15%;
+    padding-block: 8%;
   }
 
   @media (min-width: 1200px) {
-    margin-inline: 8%;
+    padding-block: 4%;
   }
 
   &__title {
-    font-family: $fontfamily-main;
-    margin-bottom: 1rem;
+    font-family: $fontfamily-title;
+    color: white;
+    margin-bottom: 1.3rem;
     text-align: center;
-    font-weight: 400;
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.8rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 2rem;
+    }
   }
 
   &__item {
@@ -215,7 +225,15 @@
 
     p {
       margin: 0;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+
+      @media (min-width: 768px) {
+      font-size: 1.3rem;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
